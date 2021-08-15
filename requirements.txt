@@ -1,0 +1,10 @@
+numpy==1.18.5
+matplotlib==3.2.1
+scipy==1.4.1
+scikit-learn==0.20.4
+joblib==0.14.1
+h5py==2.10.0
+iterative-stratification==0.1.6
+pandas==0.24.2
+PyWavelets==1.1.1
+neurokit2==0.1.2
