@@ -114,5 +114,3 @@ configs/custom
 #*.npy
 ./analysis/data
 .DS_Store
-
-./model
