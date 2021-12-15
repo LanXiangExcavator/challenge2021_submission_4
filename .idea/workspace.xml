@@ -4,43 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3b94dbb-f6fe-4e81-b948-19cdba6b8a54" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/se_resnet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extract_leads_wfdb.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_training/custom_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_training/fine_tuning_split.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_training/train_12leads.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_training/train_12leads_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_training/train_2leads.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_training/train_2leads_peak_detection.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_training/train_3leads.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_training/train_4leads.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_training/train_6leads.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_training/training.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_training/util.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_training/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/name_list_all.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/peak_targets_full_v2.npy.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/denoising.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/gradcam.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/loss.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/lr_scheduler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/metric.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/optimizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/transformers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/util.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weights.csv" beforeDir="false" afterPath="$PROJECT_DIR$/weights.csv" afterDir="false" />
-    </list>
+    <list default="true" id="e3b94dbb-f6fe-4e81-b948-19cdba6b8a54" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,9 +36,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/utils" />
       <recent name="$PROJECT_DIR$/classifier" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/model_training" />
     </key>
   </component>
@@ -117,74 +81,12 @@
       <workItem from="1629187868675" duration="58000" />
       <workItem from="1629428751228" duration="16562000" />
       <workItem from="1630653555156" duration="112000" />
-      <workItem from="1639586066603" duration="2813000" />
+      <workItem from="1639586066603" duration="3759000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="320" y="97" key="#Deployment" timestamp="1629441237042">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state x="320" y="97" key="#Deployment/0.25.1440.820@0.25.1440.820" timestamp="1629441237042" />
-    <state x="184" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629449832144">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state x="184" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.820@0.25.1440.820" timestamp="1629449832144" />
-    <state width="1440" height="438" key="DebuggerActiveHint" timestamp="1629446607780">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state width="1440" height="438" key="DebuggerActiveHint/0.25.1440.820@0.25.1440.820" timestamp="1629446607780" />
-    <state x="100" y="125" width="1240" height="620" key="DirDiffDialog" timestamp="1629446811888">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state x="100" y="125" width="1240" height="620" key="DirDiffDialog/0.25.1440.820@0.25.1440.820" timestamp="1629446811888" />
-    <state width="1398" height="260" key="GridCell.Tab.0.bottom" timestamp="1629527621306">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state width="1398" height="260" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1629527621305" />
-    <state width="1398" height="260" key="GridCell.Tab.0.center" timestamp="1629527621304">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state width="1398" height="260" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1629527621304" />
-    <state width="1398" height="260" key="GridCell.Tab.0.left" timestamp="1629527621303">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state width="1398" height="260" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1629527621303" />
-    <state width="1398" height="260" key="GridCell.Tab.0.right" timestamp="1629527621305">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state width="1398" height="260" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1629527621305" />
-    <state width="1398" height="260" key="GridCell.Tab.1.bottom" timestamp="1629527621310">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state width="1398" height="260" key="GridCell.Tab.1.bottom/0.25.1440.820@0.25.1440.820" timestamp="1629527621310" />
-    <state width="1398" height="260" key="GridCell.Tab.1.center" timestamp="1629527621309">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state width="1398" height="260" key="GridCell.Tab.1.center/0.25.1440.820@0.25.1440.820" timestamp="1629527621309" />
-    <state width="1398" height="260" key="GridCell.Tab.1.left" timestamp="1629527621308">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state width="1398" height="260" key="GridCell.Tab.1.left/0.25.1440.820@0.25.1440.820" timestamp="1629527621308" />
-    <state width="1398" height="260" key="GridCell.Tab.1.right" timestamp="1629527621309">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state width="1398" height="260" key="GridCell.Tab.1.right/0.25.1440.820@0.25.1440.820" timestamp="1629527621309" />
-    <state x="229" y="71" key="SettingsEditor" timestamp="1629441331901">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state x="229" y="71" key="SettingsEditor/0.25.1440.820@0.25.1440.820" timestamp="1629441331901" />
-    <state x="510" y="315" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1629441329444">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state x="510" y="315" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.25.1440.820@0.25.1440.820" timestamp="1629441329444" />
-    <state x="611" y="169" width="360" height="531" key="ftp.server.browser" timestamp="1629441328096">
-      <screen x="0" y="25" width="1440" height="820" />
-    </state>
-    <state x="611" y="169" width="360" height="531" key="ftp.server.browser/0.25.1440.820@0.25.1440.820" timestamp="1629441328096" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/challenge2021_submission_4$test_model.coverage" NAME="test_model Coverage Results" MODIFIED="1629447271585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
