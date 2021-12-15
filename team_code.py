@@ -495,6 +495,8 @@ def run_my_model(model_list, header, recording, config_path):
     # to filter and detrend samples
     recording1 = filter_and_detrend(recording1)
 
+    # recording1 = np.ones((12, 500*60))
+
     n_segment = 1
     # slide and cut
     recording1 = slide_and_cut(recording1, n_segment, window_size, resample_Fs, test_time_aug=True)
@@ -528,6 +530,7 @@ def run_my_model(model_list, header, recording, config_path):
 
     # to filter and detrend samples
     recording2 = filter_and_detrend(recording2)
+    # recording2 = np.ones((12, 500*60))
 
     n_segment = 1
     # slide and cut
@@ -560,6 +563,7 @@ def run_my_model(model_list, header, recording, config_path):
 
     # to filter and detrend samples
     recording3 = filter_and_detrend(recording3)
+    # recording3 = np.ones((12, 500*60))
 
     n_segment = 1
     # slide and cut
@@ -724,10 +728,18 @@ def load_my_model(config, checkpoint_path=None):
     model.to(device)
 
     if checkpoint_path is not None:
-        checkpoint = torch.load(checkpoint_path)
-        model.load_state_dict(checkpoint['state_dict'])
+        # checkpoint = torch.load(checkpoint_path)
+        # model.load_state_dict(checkpoint['state_dict'])
         global my_classes
-        my_classes = checkpoint["classes"]
+        classes_str = "164889003,164890007,6374002,426627000,733534002,164909002,713427006,59118001,270492004,713426002,39732003,445118002,164947007,251146004,111975006,698252002,426783006,63593006,284470004,10370003,365413008,427172004,17338001,164917005,47665007,427393009,426177001,427084000,164934002,59931005"
+        my_classes = classes_str.split(',')
+        # equivalent_classes = {
+        #     "733534002": "164909002",
+        #     "713427006": "59118001",
+        #     "63593006": "284470004",
+        #     "427172004": "17338001"
+        # }
+        # my_classes = checkpoint["classes"]
 
     return model
 

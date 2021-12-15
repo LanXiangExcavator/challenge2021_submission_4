@@ -101,7 +101,7 @@ class SE_ResNet(nn.Module):
         return x
 
 class SE_ResNet_Peak_Detection_Tmp(nn.Module):
-    def __init__(self, layers=[3,4,6,3], num_classes=26, channel_num=8, drop_block_size=None, input_length=4992, hidden=512, use_dense=True):
+    def __init__(self, layers=[3,4,6,3], num_classes=26, channel_num=8, drop_block_size=None, input_length=4992, hidden=2048, use_dense=True):
         super(SE_ResNet_Peak_Detection_Tmp, self).__init__()
         block = BasicBlock
         self.kernel_size = 7
@@ -120,7 +120,7 @@ class SE_ResNet_Peak_Detection_Tmp(nn.Module):
         self.fc = nn.Linear(512 * block.expansion, num_classes)
         if use_dense == False:
             self.mlp = nn.Sequential(
-                nn.Linear(8 * 312, hidden),
+                nn.Linear(512 * 156, hidden),
                 nn.ReLU(True),
                 nn.Dropout(.2),
                 nn.Linear(hidden, 156 * 5 * 3),
@@ -128,7 +128,7 @@ class SE_ResNet_Peak_Detection_Tmp(nn.Module):
         else:
             self.mlp = nn.Sequential(
                 nn.Dropout(.2),
-                nn.Linear(8 * 312, 156 * 5 * 3),
+                nn.Linear(512 * 156, 156 * 5 * 3),
             )
         # self.mlp = nn.Sequential(
         #     nn.Linear(512 * 156, 156 * 1 * 3)
@@ -157,10 +157,8 @@ class SE_ResNet_Peak_Detection_Tmp(nn.Module):
         x = self.layer1(x)
         x = self.layer2(x)
         f = self.layer3(x)
-
-        branch_x = self.branch_conv(f)
-        branch_x = branch_x.view(branch_x.size(0), -1)
-        y_peak = self.mlp(branch_x)
+        f2 = f.view(f.size(0), -1)
+        y_peak = self.mlp(f2)
         y_peak = torch.sigmoid(y_peak)
         y_peak = y_peak.view(-1, 156, 5, 3)
 
