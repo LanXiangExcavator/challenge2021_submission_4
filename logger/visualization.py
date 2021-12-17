@@ -1,4 +1,3 @@
-import importlib
 from datetime import datetime
 
 
@@ -13,12 +12,7 @@ class TensorboardWriter():
             # Retrieve vizualization writer.
             succeeded = False
             for module in ["torch.utils.tensorboard", "tensorboardX"]:
-                try:
-                    self.writer = importlib.import_module(module).SummaryWriter(log_dir)
-                    succeeded = True
-                    break
-                except ImportError:
-                    succeeded = False
+                succeeded = False
                 self.selected_module = module
 
             if not succeeded:
