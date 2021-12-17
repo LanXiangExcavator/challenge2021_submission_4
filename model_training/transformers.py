@@ -2,7 +2,6 @@
 import numpy as np
 import torch
 from scipy.interpolate import CubicSpline      # for warping
-from transforms3d.axangles import axangle2mat  # for rotation
 import pywt
 from scipy import signal
 import pandas as pd
@@ -175,34 +174,6 @@ class TimeWarp(object):
 
     def __repr__(self):
         return self.__class__.__name__ + '(sigma={0})'.format(self.sigma)
-
-
-class Rotation(object):
-    """
-    Args:
-    """
-
-    def __init__(self):
-        pass
-
-    def __call__(self, tensors):
-        """
-        Args:
-            tensor (Tensor): Tensor of size (C, L) to be scaled.
-        Returns:
-            Tensor: Scaled Tensor.
-        """
-
-        axis = torch.Tensor(tensors.shape[0]).uniform_(-1, 1)
-        angle = torch.Tensor().uniform_(-np.pi, np.pi)
-
-        # print("This is Rotation")
-        # print(type(torch.matmul(axangle2mat(axis, angle), tensors)))
-
-        return torch.matmul(axangle2mat(axis, angle), tensors).float()
-
-    def __repr__(self):
-        return self.__class__.__name__
 
 
 class Permutation(object):
